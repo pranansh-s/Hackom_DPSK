@@ -1,0 +1,46 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="phase1.css">
+  </head>
+  <body>
+    <header>
+      <div class="tele">
+        <a href="#" class="home">HOME</a>
+        <a href="#" class="tra">COVID TRACK</a>
+        <a href="#" class="don">DONATE AND VOLUNTEER</a>
+        <div class="anim"></div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="form-container">
+        <div class="text-head">
+          DONT LET THIS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HOLD YOU BACK.<br>
+          START PUSHING TOWARDS YOUR NEW CAREER <br> EVEN AT THE WORST.
+          <h1>PANDEMIC</h1>
+        </div>
+        <button><i class="fa fa-search" aria-hidden="true"></i></button>
+        <script type="text/javascript">
+          const button = document.querySelectorAll('button');
+          button.forEach(btn => {
+            btn.addEventListener('click', function(e){
+              let ripple = document.createElement('span');
+              this.appendChild(ripple);
+
+              setTimeout(() => {
+                 ripple.remove();
+              }, 1000)
+            })
+          })
+        </script>
+        <i class="fa fa-briefcase" aria-hidden="true"></i>
+        <input class="type" type="text" placeholder="The Job You Want...">
+        <i class="fa fa-map-marker" aria-hidden="true"></i>
+        <input class="locale" type="text" placeholder="Location">
+        <input type="checkbox" class="wh">
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Overpass:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&family=Rubik&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.overlay{
+  background-size: cover;
+  background-color: #444;
+  opacity: 0.6;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center;
+  height: 100%;
+}
+
+.form-container{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100vw;
+  height: 4vh;
+  top: 50%;
+}
+
+.wh{
+  position: relative;
+  width: 100px;
+  height: 35px;
+  -webkit-appearance: none;
+  transition: 0.5s;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.wh:before{
+  position: absolute;
+  padding-left: 10px;
+  padding-top: 10px;
+  content: "H O M E";
+  width: 55px;
+  height: 25px;
+  border-radius: 8px;
+  background: #fff;
+  top: 7%;
+  left: 65%;
+  transition: 0.5s;
+  transform: scale(1.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2)
+}
+
+.wh:checked:before{
+  left: 0px;
+}
+
+.wh:checked{
+  outline: none;
+  background-color: #D32F2F;
+}
+
+.wh:focus{
+  outline: none;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+input{
+  font-family: "Montserrat";
+  font-size: 12px;
+  margin: 0 10px 0 10px;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+  padding: 20px;
+  padding-left: 50px;
+  transition: 0.2s;
+}
+
+input[type="text"]:hover{
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.6);
+}
+
+.type{
+  width: 400px;
+}
+
+input[type="text"]:focus{
+  font-style: bold;
+  font-weight: 700;
+  box-shadow: inset 0 0 5px #D32F2F;
+  outline: none;
+}
+
+.fa{
+  position: relative;
+  top: 4px;
+  font-size: 34px;
+  color: orange;
+}
+
+.fa-map-marker{
+  left: 40px;
+}
+
+.fa-briefcase{
+  left: 50px;
+}
+
+.container{
+  position: relative;
+  background-image: url('images/backg-search.jpg');
+  background-size: cover;
+
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center;
+  height: 100%;
+}
+
+h1{
+  position: absolute;
+  font-size: 45px;
+  top: -20px;
+  left: 160px;
+  color: orange;
+}
+
+.text-head{
+  position: absolute;
+  top: -100px;
+  left: 23%;
+  font-size: 22px;
+  font-family: "Rubik";
+}
+
+.fa-search{
+  color: white;
+  top: 0px;
+  left: 0px;
+  font-size: 30px;
+}
+
+button{
+  position: relative;
+  background: linear-gradient(90deg, #ff9906, #fff606);
+  width: 80px;
+  height: 40px;
+  border-radius: 12px;
+  border-style: none;
+  transition: 0.4s;
+  overflow: hidden;
+}
+
+button:focus{
+  outline: none;
+}
+
+button:hover{
+  cursor: pointer;
+  outline: none;
+}
+
+span{
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  background: white;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  border-radius: 50%;
+  animation: animate 1s linear infinite;
+}
+
+@keyframes animate
+{
+  0%{
+    width: 0px;
+    height: 0px;
+    opacity: 0.5;
+  }
+  100%{
+    width: 500px;
+    height: 500px;
+    opacity: 0;
+  }
+}
