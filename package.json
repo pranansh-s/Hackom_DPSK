@@ -1,21 +1,13 @@
 {
-  "name": "hackom_dpsk",
+  "name": "hackomapp",
   "version": "1.0.0",
-  "description": "fuck this shit im out",
-  "main": "index.js",
+  "description": "",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pranansh-s/Hackom_DPSK.git"
+    "start": "electron ."
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/pranansh-s/Hackom_DPSK/issues"
-  },
-  "homepage": "https://github.com/pranansh-s/Hackom_DPSK#readme",
   "dependencies": {
     "electron": "^10.1.3"
   }
