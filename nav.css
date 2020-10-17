@@ -8,6 +8,13 @@ header{
   background: rgba(0, 0, 0, 0.3);
 }
 
+header img{
+  width: 90px;
+  top: 10px;
+  left: 10px;
+  position: absolute;
+}
+
 .tele{
   display: flex;
   justify-content: flex-end;
