@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Overpass:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+.fund{
+  padding: 60px 50px 15px 50px;
+  width: 800px;
+  border-radius: 7px;
+  background: grey;
+  text-align: center;
+}
+
+input{
+  font-size: 20px;
+  padding: 15px;
+  height: 60%;
+  width: 240%;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+}
+
+.fa-usd{
+  position: relative;
+  left: -135px;
+  font-size: 20px;
+  top: 27px;
+}
+
+h1{
+  font-family: 'Poppins';
+  font-size: 40px;
+  margin: 0 0 40px 0;
+}
+
+.label{
+  position: absolute;
+  top: -20px;
+}
+
+form{
+  display: flex;
+  width: 400%;
+}
+
+span{
+  position: relative;
+  left: -200px;
+  bottom: 5px;
+  color: white;
+  font-size: 25px;
+}
+
+.coin{
+  padding-left: 40px;
+}
+
+.inp{
+  width: 300px;
+  height: 60px;
+  margin: 20px 0;
+  position: relative;
+}
+
+.info-page{
+  width: 25%;
+}
