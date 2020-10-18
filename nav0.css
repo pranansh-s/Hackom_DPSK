@@ -30,9 +30,9 @@ header img{
   position: absolute;
   border-radius: 16px;
   top: 60px;
-  right: 444px;
   background-color: #D32F2F;
-  width: 70px;
+  right: 20px;
+  width: 220px;
   height: 5px;
   transition: all 0.3s ease-in-out;
 }

@@ -3,21 +3,29 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="phase2.css">
-    <title></title>
+    <link rel="stylesheet" href="nav0.css">
   </head>
   <body>
+      <header>
+        <img src="images/logo.png" alt="COVID PANDEMIC">
+        <div class="tele">
+          <a href="phase1.html" class="home">HOME</a>
+          <a href="covidtrack/index.html" class="tra">COVID TRACK</a>
+          <a href="phase2.html" class="don">DONATE AND VOLUNTEER</a>
+          <div class="anim"></div>
+        </div>
+      </header>
       <div class="fund">
         <h1>Donation</h1>
         <form action="#">
-          <div class="info-page">
+          <div class="info-page slide-page">
             <span>Amount To Donate</span>
               <div class="inp">
                 <i class="fa fa-usd" aria-hidden="true"></i>
                 <input type="number" class="coin">
               </div>
               <div class="inp-btn">
-                <button>Previous</button>
-                <button>Next</button>
+                <button class="next-1">Next</button>
               </div>
         </div>
         <div class="info-page">
@@ -292,11 +300,11 @@
               </div>
               <div class="inp">
                 <div class="label">Email(Optional)</div>
-                <input type="number">
+                <input type="text">
               </div>
               <div class="inp-btn">
-                <button>Previous</button>
-                <button>Next</button>
+                <button class="prev-2">Previous</button>
+                <button class="next-2">Next</button>
               </div>
         </div>
         <div class="info-page">
@@ -314,11 +322,12 @@
                 <input type="password" placeholder="***">
               </div>
               <div class="inp-btn">
-                <button>Previous</button>
-                <button>Sumbit</button>
+                <button class="prev-3">Previous</button>
+                <button class="submit">Sumbit</button>
               </div>
             </div>
         </form>
       </div>
   </body>
+  <script type="text/javascript" src="formlay.js"></script>
 </html>

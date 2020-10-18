@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Overpass:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Overpass:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
 *{
   margin: 0;
@@ -8,6 +8,10 @@
 }
 
 body{
+  background-image: url("images/join.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   height: 100%;
@@ -15,20 +19,39 @@ body{
 }
 
 .fund{
+  position: relative;
+  top: 140px;
   padding: 60px 50px 15px 50px;
   width: 800px;
+  height: 800px;
+  overflow: hidden;
   border-radius: 7px;
-  background: grey;
+  background: linear-gradient(90deg, #99e10299, #dce10299);
   text-align: center;
 }
 
+input:focus, button:focus{
+  outline: none;
+}
+
+button:hover{
+  background-color: #e1b100;
+  cursor: pointer;
+}
+
 input{
+  border-style: none;
+  box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.3);
   font-size: 20px;
   padding: 15px;
   height: 60%;
   width: 240%;
   border: 1px solid lightgrey;
   border-radius: 4px;
+}
+
+.inp-btn{
+  display: flex;
 }
 
 .fa-usd{
@@ -38,7 +61,7 @@ input{
   top: 27px;
 }
 
-h1{
+.fund h1{
   font-family: 'Poppins';
   font-size: 40px;
   margin: 0 0 40px 0;
@@ -47,9 +70,27 @@ h1{
 .label{
   position: absolute;
   top: -20px;
+  font-size: 18px;
+  color: #222;
+  font-weight: 600;
+}
+
+button{
+  transition: all 0.4s ease-out;
+  width: 100%;
+  font-size: 15px;
+  height: 70px;
+  border-radius: 10px;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 1;
+  margin-top: 20px;
+  color: white;
+  background-color: #39ffce;
 }
 
 form{
+  position: relative;
   display: flex;
   width: 400%;
 }
@@ -74,5 +115,6 @@ span{
 }
 
 .info-page{
+  margin-right: 60px;
   width: 25%;
 }
