@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  var url = "http://newsapi.org/v2/top-headlines?q=corona&country=us&apiKey=492c83b3fb69467dba5345df7c3b8257";
+  var url = "https://newsapi.org/v2/top-headlines?q=corona&country=us&apiKey=492c83b3fb69467dba5345df7c3b8257";
 
     $.getJSON(url,function(data){
       console.log(data);
