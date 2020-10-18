@@ -6,5 +6,6 @@ btn.addEventListener("click", function(){
   var locale = document.getElementById('locale');
   var wh = document.getElementById('wh');
 
-  window.location = "res.html";
+
+  window.location.href = "https://www.indeed.co.in/?from=gnav-jobsearch--jasx";
 });
