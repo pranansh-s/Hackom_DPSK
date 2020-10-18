@@ -16,6 +16,7 @@
         <div class="anim"></div>
       </div>
     </header>
+    <div class="results"></div>
     <div class="container">
       <div class="form-container">
         <div class="text-head">
@@ -23,7 +24,7 @@
           START PUSHING TOWARDS YOUR NEW CAREER <br> EVEN AT THE WORST.
           <h1>PANDEMIC</h1>
         </div>
-        <button><i class="fa fa-search" aria-hidden="true"></i></button>
+        <button id="search"><i class="fa fa-search" aria-hidden="true"></i></button>
         <script type="text/javascript">
           const button = document.querySelectorAll('button');
           button.forEach(btn => {
@@ -38,10 +39,10 @@
           })
         </script>
         <i class="fa fa-briefcase" aria-hidden="true"></i>
-        <input class="type" type="text" placeholder="The Job You Want...">
+        <input class="type" id="type" type="text" placeholder="The Job You Want...">
         <i class="fa fa-map-marker" aria-hidden="true"></i>
-        <input class="locale" type="text" placeholder="Location">
-        <input type="checkbox" class="wh">
+        <input class="locale" id="locale" type="text" placeholder="Location">
+        <input type="checkbox" class="wh" id="wh">
       </div>
     </div>
     <div class="notif">
@@ -53,6 +54,9 @@
       infection by washing your hands or using an alcohol based rub frequently and not touching your face.
     </div>
     <div class="second-bg"></div>
+    <video id="video" loop="true" autoplay="true">
+      <source src="images/virus_stock.mp4" type="video/mp4">
+    </video>
     <div class="newspage">
       <div class="head-news">Keep You Up-To Date</div>
       <div class="news-container">
@@ -66,4 +70,5 @@
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script type="text/javascript" src="news.js"></script>
+  <script type="text/javascript" src="search-result.js"></script>
 </html>

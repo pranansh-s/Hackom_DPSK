@@ -6,6 +6,13 @@
   box-sizing: border-box;
 }
 
+video{
+  position: absolute;
+  height: 700px;
+  left: 3vw;
+  top: 149vh;
+}
+
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
