@@ -1,13 +1,13 @@
 $(document).ready(function(){
-  var url = "https://newsapi.org/v2/top-headlines?q=corona&country=us&apiKey=492c83b3fb69467dba5345df7c3b8257";
+  var url = "https://api.nytimes.com/svc/topstories/v2/health.json?api-key=zL8PxsEf3xYPolNKmWQFxSuqRVlMrpdZ";
 
-    $.getJSON(url,function(data){
+    $.getJSON(url, function(data){
       var li = document.getElementsByClassName("news");
       for(var i = 0; i < 5; ++i){
-        li[i].style.backgroundImage = "url('" + data.articles[i].urlToImage + "')";
-        li[i].href = data.articles[i].url;
+        li[i].style.backgroundImage = "url('" + data.results[i].multimedia[0].url + "')";
+        li[i].href = data.results[i].url;
         var h = document.createElement("h4");
-        h.textContent = data.articles[i].title;
+        h.textContent = data.results[i].title;
         li[i].appendChild(h);
       }
     })
